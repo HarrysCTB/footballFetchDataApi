@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My flash Result</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'football_app/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Flash Result  <img src="{% static 'football_app/ball.png' %}" width="20" height="20"></a>
+        <nav class="navbar">
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Score du jour</h1>
+        <div class="score">
+            {% if homeTeamList %}
+                {% for key in homeTeamList %}
+                    <p class="match-info"><strong>{{ key|safe }}</strong></p>
+                {% endfor %}
+            {% else %}
+                <p>Impossible de récupérer la valeur de l'API pour le moment.</p>
+            {% endif %}
+        </div>
+    </div>
+    <footer>
+        <ul class="menu">
+            <li><a href="https://github.com/HarrysCTB" target="_blank">Github</a></li>
+            <li><a href="https://twitter.com/elarifcoding" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/elarif-inzoudine/" target="_blank">Linkedin</a></li>
+            <li><a href="#">Website</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>&copy; 2023 Elarif Inzoudine | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
