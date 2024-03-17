@@ -1,8 +1,12 @@
-# Football Fetch Data API
+# Football Fetch Data API ⚽️
 
 Ce projet est une application Python qui utilise l'API Football Data pour récupérer des données sur les matchs de football et les affiche dans une application web Django.
 
-## Prérequis
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODZ1c3lhdzB4YnA5cDEza3RvMmRhNmxwYzRtaDI1c3lkYm5wY3Y5YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yxSjD4SqvTWotmEupF/giphy.gif" />
+</p>
+
+## Prérequis 🖥️
 
 - Python 3.6 ou supérieur
 - Django
@@ -14,7 +18,7 @@ Vous pouvez installer les bibliothèques nécessaires avec pip :
 ```bash
 pip install django requests python-dotenv
 ```
-## Configuration
+## Configuration 🔌
 
 Ce projet utilise l'API Football Data. Pour le faire fonctionner localement, vous aurez besoin d'un token d'API.
 1. Créez un compte sur Football Data et obtenez un token.
@@ -27,20 +31,24 @@ X_AUTH_TOKEN=votre_token
 ```
 4. Sauvegardez et fermez le fichier. Le token est maintenant disponible pour l'application.
 
-## Utilisation
+## Utilisation 💻
 
 Pour exécuter l'application, utilisez la commande suivante dans votre terminal :
 
 ```bash
 python manage.py runserver
 ```
-Ouvrez votre navigateur et accédez à http://localhost:8000 pour voir l'application en action.  
+Ouvrez votre navigateur et accédez à http://localhost:8000 pour voir l'application en action.
 
-## Contribution
+## 🎥 Démonstration
+
+![Imgur](https://imgur.com/WExWnSP.png)
+
+## Contribution 🤝
 
 Les contributions sont les bienvenues. Pour contribuer, veuillez forker le projet, créer une nouvelle branche, puis soumettre une Pull Request.
 
-## Licence
+## Licence 📄
 
-Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
